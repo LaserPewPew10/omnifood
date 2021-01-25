@@ -1,4 +1,4 @@
-/* Big tablet to 1200px (width smaller than the 1140px row): from 767px to 1024px */
+/* Big tablet to 1200px (widths smaller taht the 1140px row) */
 @media only screen and (max-width: 1200px) {
   .hero-text-box {
     width: 100%;
@@ -10,7 +10,7 @@
   }
 }
 
-/* Small tablet to big tablet: from 767px to 1024px */
+/* Small tablet to big tablet: from 768px to 1023px */
 @media only screen and (max-width: 1023px) {
   body {
     font-size: 18px;
@@ -30,11 +30,11 @@
   .steps-box:last-child {
     margin-top: 10px;
   }
-  .works-step {
+  .works-steps {
     margin-bottom: 40px;
   }
   .works-step:last-of-type {
-    margin-bottom: 80px;
+    margin-bottom: 60px;
   }
 
   .app-screen {
@@ -43,8 +43,9 @@
 
   .icon-small {
     width: 17px;
-    margin-right: 10px;
+    margin-right: 5px;
   }
+
   .city-feature {
     font-size: 90%;
   }
@@ -53,16 +54,16 @@
     width: 100%;
     margin-left: 0%;
   }
+
   .plan-price {
     font-size: 250%;
   }
-
   .contact-form {
     width: 80%;
   }
 }
 
-/* Small Phones to small tablets: from 480px to 767px */
+/* Small phones to small tablets: from 481px to 767px */
 @media only screen and (max-width: 767px) {
   body {
     font-size: 16px;
@@ -70,6 +71,7 @@
   section {
     padding: 30px 0;
   }
+
   .row,
   .hero-text-box {
     padding: 0 4%;
@@ -81,6 +83,42 @@
 
   .main-nav {
     display: none;
+  }
+  .mobile-nav-icon {
+    display: inline-block;
+  }
+
+  .main-nav {
+    float: left;
+    margin-top: 30px;
+    margin-left: 25px;
+  }
+
+  .main-nav li {
+    display: block;
+  }
+
+  .main-nav li a:link,
+  .main-nav li a:visited {
+    display: block;
+    border: 0;
+    padding: 10px 0;
+    font-size: 100%;
+  }
+
+  .sticky .main-nav {
+    margin-top: 10px;
+  }
+
+  .sticky .main-nav li a:link,
+  .sticky .main-nav li a:visited {
+    padding: 10px 0;
+  }
+  .sticky .mobile-nav-icon {
+    margin-top: 10px;
+  }
+  .sticky .mobile-nav-icon i {
+    color: #555;
   }
 
   h1 {
@@ -98,7 +136,6 @@
   .app-screen {
     width: 40%;
   }
-
   .steps-box:first-child {
     text-align: center;
   }
@@ -106,8 +143,8 @@
   .works-step div {
     height: 40px;
     width: 40px;
-    padding: 4px;
     margin-right: 15px;
+    padding: 4px;
     font-size: 120%;
   }
 
@@ -119,7 +156,7 @@
   }
 }
 
-/* Small Phones: from 0px to 480px */
+/* Small phones: from 0 to 480px */
 @media only screen and (max-width: 480px) {
   section {
     padding: 25px 0;
